@@ -45,7 +45,7 @@
         <map_to_field>false</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>true</mask_use_encryption>
-        <name>student</name>
+        <name>Student</name>
         <not_available_conversation>false</not_available_conversation>
         <order>100</order>
         <post_insert_script/>
@@ -82,14 +82,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-12-12 14:52:59</sys_created_on>
         <sys_id>c4894411c3757210d8d7961d05013177</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Student</sys_name>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope>
         <sys_update_name>item_option_new_c4894411c3757210d8d7961d05013177</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-12-12 14:57:25</sys_updated_on>
+        <sys_updated_on>2025-12-12 15:29:58</sys_updated_on>
         <table/>
         <tooltip/>
         <topic_block/>
