@@ -23,7 +23,7 @@
         <dynamic_value_field/>
         <enable_also_request_for>false</enable_also_request_for>
         <example_text/>
-        <field/>
+        <field>reason</field>
         <global>false</global>
         <help_tag>More information</help_tag>
         <help_text/>
@@ -42,12 +42,12 @@
         <macro/>
         <macroponent/>
         <mandatory>true</mandatory>
-        <map_to_field>false</map_to_field>
+        <map_to_field>true</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>true</mask_use_encryption>
         <name>reason</name>
         <not_available_conversation>false</not_available_conversation>
-        <order>600</order>
+        <order>700</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
@@ -82,14 +82,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-12-12 14:57:14</sys_created_on>
         <sys_id>ca3c4c15c3757210d8d7961d05013100</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Reason</sys_name>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope>
         <sys_update_name>item_option_new_ca3c4c15c3757210d8d7961d05013100</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-12-12 15:31:47</sys_updated_on>
+        <sys_updated_on>2025-12-12 16:14:06</sys_updated_on>
         <table/>
         <tooltip/>
         <topic_block/>
