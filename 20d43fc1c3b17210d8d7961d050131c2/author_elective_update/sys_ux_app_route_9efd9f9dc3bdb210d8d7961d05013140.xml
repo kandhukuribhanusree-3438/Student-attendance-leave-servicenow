@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="DELETE">
+        <app_config display_value="Advanced Dashboards">02dc36706f01011089060168e25b3691</app_config>
+        <description/>
+        <extension_point/>
+        <fields/>
+        <icon/>
+        <interoperable>false</interoperable>
+        <name>Faculty &amp; HOD Dashboard</name>
+        <optional_parameters/>
+        <order>0</order>
+        <parent_macroponent display_value="UXR Base Experience Shell - Advanced">47bcb58553030110aab9ddeeff7b12c2</parent_macroponent>
+        <parent_macroponent_composition_element_id/>
+        <route_type>faculty_&amp;_hod_dashboard-215686515</route_type>
+        <screen_type display_value="Faculty &amp; HOD Dashboard">46fd5f9dc3bdb210d8d7961d050131f3</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-13 06:13:14</sys_created_on>
+        <sys_id>9efd9f9dc3bdb210d8d7961d05013140</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Faculty &amp; HOD Dashboard</sys_name>
+        <sys_package display_value="Student Attendance And Leave Management" source="x_1681222_studen_0">20d43fc1c3b17210d8d7961d050131c2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope>
+        <sys_update_name>sys_ux_app_route_9efd9f9dc3bdb210d8d7961d05013140</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-13 06:13:14</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_translated_text action="DELETE" query="documentkey=9efd9f9dc3bdb210d8d7961d05013140"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</application>
+        <file_path/>
+        <instance_id>7b3ed113ffab0614c812f8e4fc4fd9b2</instance_id>
+        <instance_name>dev280410</instance_name>
+        <name>sys_ux_app_route_9efd9f9dc3bdb210d8d7961d05013140</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route"><sys_ux_app_route action="INSERT_OR_UPDATE"><app_config display_value="Advanced Dashboards">02dc36706f01011089060168e25b3691</app_config><description/><extension_point/><fields/><icon/><interoperable>false</interoperable><name>Faculty &amp; HOD Dashboard</name><optional_parameters/><order>0</order><parent_macroponent display_value="UXR Base Experience Shell - Advanced">47bcb58553030110aab9ddeeff7b12c2</parent_macroponent><parent_macroponent_composition_element_id/><route_type>faculty_&amp;_hod_dashboard-215686515</route_type><screen_type display_value="Faculty &amp; HOD Dashboard">46fd5f9dc3bdb210d8d7961d050131f3</screen_type><sys_class_name>sys_ux_app_route</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-12-13 06:13:14</sys_created_on><sys_id>9efd9f9dc3bdb210d8d7961d05013140</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Faculty &amp; HOD Dashboard</sys_name><sys_package display_value="Student Attendance And Leave Management" source="x_1681222_studen_0">20d43fc1c3b17210d8d7961d050131c2</sys_package><sys_policy/><sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope><sys_update_name>sys_ux_app_route_9efd9f9dc3bdb210d8d7961d05013140</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-12-13 06:13:14</sys_updated_on></sys_ux_app_route><sys_translated_text action="delete_multiple" query="documentkey=9efd9f9dc3bdb210d8d7961d05013140"/></record_update>]]></payload>
+        <payload_hash>-1383949821</payload_hash>
+        <record_name>Faculty &amp; HOD Dashboard</record_name>
+        <reverted_from/>
+        <source>2836ff85c3b17210d8d7961d0501312c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-13 06:13:14</sys_created_on>
+        <sys_id>56fd9f9dc3bdb210d8d7961d05013147</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b16578bf00000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-13 06:13:14</sys_updated_on>
+        <type>UX App Route</type>
+        <update_guid>d2fd9f9d13bdb2107754d5590e977446</update_guid>
+        <update_guid_history>d2fd9f9d13bdb2107754d5590e977446:-1383949821</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-13 06:20:22</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_app_route">sys_ux_app_route</sys_db_object>
+        <sys_id>1ba017393c464b6083a013e81a2d4084</sys_id>
+        <sys_metadata>9efd9f9dc3bdb210d8d7961d05013140</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Faculty &amp; HOD Dashboard</sys_name>
+        <sys_package display_value="Student Attendance And Leave Management" source="x_1681222_studen_0">20d43fc1c3b17210d8d7961d050131c2</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope>
+        <sys_scope_delete display_value="">620be62f56ae4b63b6586b3ab65f9a61</sys_scope_delete>
+        <sys_update_name>sys_ux_app_route_9efd9f9dc3bdb210d8d7961d05013140</sys_update_name>
+        <sys_update_version display_value="sys_ux_app_route_9efd9f9dc3bdb210d8d7961d05013140">56fd9f9dc3bdb210d8d7961d05013147</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-13 06:20:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="d9b8f30dc3b17210d8d7961d050131db" sys_domain="global" table="x_1681222_studen_0_student" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>user</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-12 14:10:19</sys_created_on>
+            <sys_id>4d918411c3357210d8d7961d05013176</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1681222_studen_0_student" sys_domain="global" view="Default view">d9b8f30dc3b17210d8d7961d050131db</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-12 14:10:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>student_id</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-12 14:10:19</sys_created_on>
+            <sys_id>09918411c3357210d8d7961d05013177</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1681222_studen_0_student" sys_domain="global" view="Default view">d9b8f30dc3b17210d8d7961d050131db</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-12 14:10:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>year</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-12 14:10:19</sys_created_on>
+            <sys_id>c1918411c3357210d8d7961d05013178</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1681222_studen_0_student" sys_domain="global" view="Default view">d9b8f30dc3b17210d8d7961d050131db</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-12 14:10:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>section</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-12 14:10:19</sys_created_on>
+            <sys_id>8d918411c3357210d8d7961d05013178</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1681222_studen_0_student" sys_domain="global" view="Default view">d9b8f30dc3b17210d8d7961d050131db</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-12 14:10:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>department</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-12 14:10:19</sys_created_on>
+            <sys_id>49918411c3357210d8d7961d05013179</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1681222_studen_0_student" sys_domain="global" view="Default view">d9b8f30dc3b17210d8d7961d050131db</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-12 14:10:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>email</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-12 14:10:19</sys_created_on>
+            <sys_id>05918411c3357210d8d7961d0501317a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1681222_studen_0_student" sys_domain="global" view="Default view">d9b8f30dc3b17210d8d7961d050131db</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-12 14:10:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>parent_user</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-12 14:10:19</sys_created_on>
+            <sys_id>cd918411c3357210d8d7961d0501317a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1681222_studen_0_student" sys_domain="global" view="Default view">d9b8f30dc3b17210d8d7961d050131db</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-12 14:10:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>parent_email</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-12 14:10:19</sys_created_on>
+            <sys_id>89918411c3357210d8d7961d0501317b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1681222_studen_0_student" sys_domain="global" view="Default view">d9b8f30dc3b17210d8d7961d050131db</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-12 14:10:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>faculty_mentor</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-12 14:10:19</sys_created_on>
+            <sys_id>45918411c3357210d8d7961d0501317c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1681222_studen_0_student" sys_domain="global" view="Default view">d9b8f30dc3b17210d8d7961d050131db</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-12 14:10:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_1681222_studen_0_student</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-12 13:31:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d9b8f30dc3b17210d8d7961d050131db</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1681222_studen_0_student</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Student Attendance And Leave Management" source="x_1681222_studen_0">20d43fc1c3b17210d8d7961d050131c2</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope>
+            <sys_update_name>sys_ui_section_d9b8f30dc3b17210d8d7961d050131db</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-12 13:31:33</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

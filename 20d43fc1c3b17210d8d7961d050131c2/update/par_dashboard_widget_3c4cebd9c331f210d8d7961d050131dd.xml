@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="INSERT_OR_UPDATE">
+        <canvas display_value="">db532f59c3fdb210d8d7961d05013121</canvas>
+        <component display_value="Vertical bar">23051643b7e03010097cb81cde11a910</component>
+        <component_props>{"selectedElements":[],"configVersion":"23.0.0-ci-SNAPSHOT","chartVariation":"stacked","yAxisPosition":"bottom","yAxisShowGrid":true,"xAxisWrapLabels":false,"xAxisMaxLabelSize":100,"showClosestSeriesOnHover":true,"xAxisTruncationType":"end","yAxisStyle":"clean","showLegend":true,"showLegendValue":false,"legendPosition":"bottom","legendHorizontalAlignment":"center","legendExpandToFit":false,"showDataLabels":false,"dataLabelPosition":"middle","showStackedValues":"none","showOverlappingLabels":false,"yAxisHidden":false,"xAxisHidden":false,"rangesConfig":{},"colorConfig":{"type":"default"},"newReporting":false,"enableAddZerosAtApi":true,"additionalGroupByConfig":[],"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"label":"Attendance","sourceType":"table","tableOrViewName":"x_1681222_studen_0_attendance","preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"dGFibGV4XzE2ODEyMjJfc3R1ZGVuXzBfYXR0ZW5kYW5jZTE3NjU2MTAwOTQ2NTM=","dataCategories":["trend","group","simple"]}],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"wrapTitle":true,"showLoadingIndicator":false,"showHeaderSeparator":false,"contextMenuActions":[],"headerTitle":"Attendance Summary (Student-wise)","headingLevel":2,"description":"This report displays the attendance count for each student, showing how many attendance records are present per student. It helps faculty and HOD quickly understand individual student attendance patterns.\n","showBorder":true,"bareBorder":false,"telemetry":null,"showDataPassthrough":false,"showAdditionalGroupBySelector":false,"allowAdditionalGroupByPerMetric":false,"metrics":[{"dataSource":"dGFibGV4XzE2ODEyMjJfc3R1ZGVuXzBfYXR0ZW5kYW5jZTE3NjU2MTAwOTQ2NTM=","id":"ZEdGaWJHVjRYekUyT0RFeU1qSmZjM1IxWkdWdVh6QmZZWFIwWlc1a1lXNWpaVEUzTmpVMk1UQXdPVFEyTlRNPTE3NjU2MTAwOTU1NDI=","aggregateFunction":"COUNT","numberFormat":{"customFormat":false},"axisId":"primary"}],"groupBy":[{"groupBy":[{"dataSource":"dGFibGV4XzE2ODEyMjJfc3R1ZGVuXzBfYXR0ZW5kYW5jZTE3NjU2MTAwOTQ2NTM=","groupByField":"student","isRange":false,"isChoice":false,"isPaBucket":false}],"maxNumberOfGroups":"ALL","numberOfGroupsBasedOn":"NO_OF_GROUP_BASED_ON_PER_METRIC","showOthers":false,"disableRanges":false}],"filterPerMetric":[],"sortBy":"value","sortByOrder":"desc","trendBy":null,"showChange":false,"showChangePercentage":false,"showTarget":false,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":false,"showSparkline":false,"showMetricLabel":false,"showThreshold":false,"showComment":false,"followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":false,"enableDrilldown":true,"enableClickAndStay":false,"showDataTable":false,"enableCustomEmptyState":false,"componentId":"1g2a67v3","emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateHeadingLevel":3,"emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","refreshFrequency":null,"hideDevSettings":false,"configPropModifiers":{},"filterConfigurations":"@state.parFilters","showMaximumRange":false,"allowChangeDateRange":false,"showDateRangeByDefault":false,"applyDateRange":false,"numberOfPeriods":3,"showAbsolutePeriod":false,"scoreType":null,"showChangeFrom":"previous","useCurrentDateForEnd":false,"period":"M","useDataCache":false,"cacheExpirationTime":0,"showCacheTime":true,"dateFormat":"default","showRefresh":true,"showFilterAsSeparateSeries":false,"userInfo":"@context.session.user","sharedContext":{"datasourceConfigurations":{"table":{"timeZone":"SESSION","useSeriesLabels":false}}},"colors":{}}</component_props>
+        <h>13</h>
+        <name/>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-13 07:15:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3c4cebd9c331f210d8d7961d050131dd</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Student Attendance And Leave Management" source="x_1681222_studen_0">20d43fc1c3b17210d8d7961d050131c2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope>
+        <sys_update_name>par_dashboard_widget_3c4cebd9c331f210d8d7961d050131dd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-13 07:38:37</sys_updated_on>
+        <visualization/>
+        <w>22</w>
+        <widget_props/>
+        <x>23</x>
+        <y>0</y>
+    </par_dashboard_widget>
+</record_update>

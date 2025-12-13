@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_permission">
+    <par_dashboard_permission action="DELETE">
+        <can_read>true</can_read>
+        <can_share>true</can_share>
+        <can_write>true</can_write>
+        <dashboard display_value="Faculty &amp; HOD Dashboard">86fd1b9dc3bdb210d8d7961d050131c6</dashboard>
+        <group/>
+        <owner>true</owner>
+        <role/>
+        <sys_class_name>par_dashboard_permission</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-13 06:13:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>06fd5f9dc3bdb210d8d7961d050131c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>86fd1b9dc3bdb210d8d7961d050131c6</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Student Attendance And Leave Management" source="x_1681222_studen_0">20d43fc1c3b17210d8d7961d050131c2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope>
+        <sys_update_name>par_dashboard_permission_06fd5f9dc3bdb210d8d7961d050131c0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-13 06:13:13</sys_updated_on>
+        <user display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</user>
+    </par_dashboard_permission>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</application>
+        <file_path/>
+        <instance_id>7b3ed113ffab0614c812f8e4fc4fd9b2</instance_id>
+        <instance_name>dev280410</instance_name>
+        <name>par_dashboard_permission_06fd5f9dc3bdb210d8d7961d050131c0</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_permission"><par_dashboard_permission action="INSERT_OR_UPDATE"><can_read>true</can_read><can_share>true</can_share><can_write>true</can_write><dashboard display_value="Faculty &amp; HOD Dashboard">86fd1b9dc3bdb210d8d7961d050131c6</dashboard><group/><owner>true</owner><role/><sys_class_name>par_dashboard_permission</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-12-13 06:13:13</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>06fd5f9dc3bdb210d8d7961d050131c0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>86fd1b9dc3bdb210d8d7961d050131c6</sys_name><sys_overrides/><sys_package display_value="Student Attendance And Leave Management" source="x_1681222_studen_0">20d43fc1c3b17210d8d7961d050131c2</sys_package><sys_policy/><sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope><sys_update_name>par_dashboard_permission_06fd5f9dc3bdb210d8d7961d050131c0</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-12-13 06:13:13</sys_updated_on><user display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</user></par_dashboard_permission></record_update>]]></payload>
+        <payload_hash>-1494895853</payload_hash>
+        <record_name>86fd1b9dc3bdb210d8d7961d050131c6</record_name>
+        <reverted_from/>
+        <source>2836ff85c3b17210d8d7961d0501312c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-13 06:13:13</sys_created_on>
+        <sys_id>cefd5f9dc3bdb210d8d7961d050131c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b165787330000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-13 06:13:13</sys_updated_on>
+        <type>PAR Dashboard Permission</type>
+        <update_guid>8efd5f9d23bdb2101c43b5e26c5350c4</update_guid>
+        <update_guid_history>8efd5f9d23bdb2101c43b5e26c5350c4:-1494895853</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">269f9791c3fdb210d8d7961d050131b3</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-13 06:20:22</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_permission">par_dashboard_permission</sys_db_object>
+        <sys_id>cd634ed676524c00a23b096f5d27ca90</sys_id>
+        <sys_metadata>06fd5f9dc3bdb210d8d7961d050131c0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>86fd1b9dc3bdb210d8d7961d050131c6</sys_name>
+        <sys_package display_value="Student Attendance And Leave Management" source="x_1681222_studen_0">20d43fc1c3b17210d8d7961d050131c2</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope>
+        <sys_scope_delete display_value="">620be62f56ae4b63b6586b3ab65f9a61</sys_scope_delete>
+        <sys_update_name>par_dashboard_permission_06fd5f9dc3bdb210d8d7961d050131c0</sys_update_name>
+        <sys_update_version display_value="par_dashboard_permission_06fd5f9dc3bdb210d8d7961d050131c0">cefd5f9dc3bdb210d8d7961d050131c5</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-13 06:20:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_canvas">
+    <par_dashboard_canvas action="DELETE">
+        <dashboard display_value="Faculty &amp; HOD Dashboard">86fd1b9dc3bdb210d8d7961d050131c6</dashboard>
+        <dashboard_tab display_value="New Tab 28">c6fd5f9dc3bdb210d8d7961d050131e6</dashboard_tab>
+        <layout>[]</layout>
+        <sys_class_name>par_dashboard_canvas</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-13 06:13:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>86fd5f9dc3bdb210d8d7961d050131eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Student Attendance And Leave Management" source="x_1681222_studen_0">20d43fc1c3b17210d8d7961d050131c2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope>
+        <sys_update_name>par_dashboard_canvas_86fd5f9dc3bdb210d8d7961d050131eb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-13 06:13:13</sys_updated_on>
+    </par_dashboard_canvas>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</application>
+        <file_path/>
+        <instance_id>7b3ed113ffab0614c812f8e4fc4fd9b2</instance_id>
+        <instance_name>dev280410</instance_name>
+        <name>par_dashboard_canvas_86fd5f9dc3bdb210d8d7961d050131eb</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_canvas"><par_dashboard_canvas action="INSERT_OR_UPDATE"><dashboard display_value="Faculty &amp; HOD Dashboard">86fd1b9dc3bdb210d8d7961d050131c6</dashboard><dashboard_tab display_value="New Tab 28">c6fd5f9dc3bdb210d8d7961d050131e6</dashboard_tab><layout>[]</layout><sys_class_name>par_dashboard_canvas</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-12-13 06:13:13</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>86fd5f9dc3bdb210d8d7961d050131eb</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="Student Attendance And Leave Management" source="x_1681222_studen_0">20d43fc1c3b17210d8d7961d050131c2</sys_package><sys_policy/><sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope><sys_update_name>par_dashboard_canvas_86fd5f9dc3bdb210d8d7961d050131eb</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-12-13 06:13:13</sys_updated_on></par_dashboard_canvas></record_update>]]></payload>
+        <payload_hash>2132334882</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>2836ff85c3b17210d8d7961d0501312c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-13 06:13:13</sys_created_on>
+        <sys_id>4afd5f9dc3bdb210d8d7961d050131ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b165788150000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-13 06:13:13</sys_updated_on>
+        <type>PAR Dashboard Page Canvas</type>
+        <update_guid>0afd5f9d03bdb210c0da5f770886efee</update_guid>
+        <update_guid_history>0afd5f9d03bdb210c0da5f770886efee:2132334882</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">2a9f9791c3fdb210d8d7961d050131a9</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-13 06:20:22</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_canvas">par_dashboard_canvas</sys_db_object>
+        <sys_id>9c40a41cc9a94ce09f5803db6eff1900</sys_id>
+        <sys_metadata>86fd5f9dc3bdb210d8d7961d050131eb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Student Attendance And Leave Management" source="x_1681222_studen_0">20d43fc1c3b17210d8d7961d050131c2</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope>
+        <sys_scope_delete display_value="">620be62f56ae4b63b6586b3ab65f9a61</sys_scope_delete>
+        <sys_update_name>par_dashboard_canvas_86fd5f9dc3bdb210d8d7961d050131eb</sys_update_name>
+        <sys_update_version display_value="par_dashboard_canvas_86fd5f9dc3bdb210d8d7961d050131eb">4afd5f9dc3bdb210d8d7961d050131ef</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-13 06:20:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
