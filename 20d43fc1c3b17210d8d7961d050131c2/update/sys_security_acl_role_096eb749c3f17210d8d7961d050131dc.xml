@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-12 13:56:24</sys_created_on>
+        <sys_id>096eb749c3f17210d8d7961d050131dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1681222_studen_0_leave_request.x_1681222_studen_0.student_role</sys_name>
+        <sys_package display_value="Student Attendance And Leave Management" source="x_1681222_studen_0">20d43fc1c3b17210d8d7961d050131c2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope>
+        <sys_security_acl display_value="x_1681222_studen_0_leave_request">016eb749c3f17210d8d7961d050131d7</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_096eb749c3f17210d8d7961d050131dc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-12 13:56:24</sys_updated_on>
+        <sys_user_role display_value="x_1681222_studen_0.student_role" name="x_1681222_studen_0.student_role">f8d47fc1c3b17210d8d7961d0501312b</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

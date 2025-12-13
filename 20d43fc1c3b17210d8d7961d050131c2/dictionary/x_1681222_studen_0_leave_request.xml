@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="735ef349c3f17210d8d7961d050131a6" label="Leave Request" max_length="40" name="x_1681222_studen_0_leave_request" type="collection">
+        <element label="Number of Days" max_length="40" name="number_of_days" type="integer"/>
+        <element choice="3" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Faculty Approved" sequence="1" value="faculty_approved"/>
+                <element inactive_on_update="false" label="Requested" sequence="0" value="requested"/>
+                <element inactive_on_update="false" label="Rejected" sequence="3" value="rejected"/>
+                <element inactive_on_update="false" label="HOD Approved" sequence="2" value="hod_approved"/>
+            </choice>
+        </element>
+        <element label="Reason" max_length="4000" name="reason" type="string"/>
+        <element label="End Date" max_length="40" name="end_date" type="glide_date"/>
+        <element display="true" label="Student" max_length="32" name="student" reference="x_1681222_studen_0_student" type="reference"/>
+        <element label="Start Date" max_length="40" name="start_date" type="glide_date"/>
+        <element choice="3" label="Type" max_length="40" name="type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Sick" sequence="0" value="sick"/>
+                <element inactive_on_update="false" label="Official Duty" sequence="2" value="official_duty"/>
+                <element inactive_on_update="false" label="Other" sequence="3" value="other"/>
+                <element inactive_on_update="false" label="Casual" sequence="1" value="casual"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="student"/>
+        </index>
+    </element>
+</database>

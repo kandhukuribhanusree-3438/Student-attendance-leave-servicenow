@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_1681222_studen_0.faculty_role" name="x_1681222_studen_0.faculty_role">38d47fc1c3b17210d8d7961d05013117</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-12 13:14:36</sys_created_on>
+        <sys_id>f8d47fc1c3b17210d8d7961d05013119</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>38d47fc1c3b17210d8d7961d05013117</sys_name>
+        <sys_package display_value="Student Attendance And Leave Management" source="x_1681222_studen_0">20d43fc1c3b17210d8d7961d050131c2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope>
+        <sys_update_name>sys_embedded_help_role_f8d47fc1c3b17210d8d7961d05013119</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-12 13:14:36</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

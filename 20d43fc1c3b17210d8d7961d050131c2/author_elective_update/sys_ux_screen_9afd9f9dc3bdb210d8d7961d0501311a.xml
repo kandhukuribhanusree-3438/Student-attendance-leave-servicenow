@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="DELETE">
+        <active>true</active>
+        <app_config display_value="Advanced Dashboards">02dc36706f01011089060168e25b3691</app_config>
+        <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
+        <disable_interoperable>false</disable_interoperable>
+        <event_mappings/>
+        <macroponent/>
+        <macroponent_config>{}</macroponent_config>
+        <name>Faculty &amp; HOD Dashboard default</name>
+        <order>0</order>
+        <parent_macroponent display_value="UXR Base Experience Shell - Advanced">47bcb58553030110aab9ddeeff7b12c2</parent_macroponent>
+        <required_translations>[ ]</required_translations>
+        <rollback_screen/>
+        <screen_condition/>
+        <screen_type display_value="Faculty &amp; HOD Dashboard">46fd5f9dc3bdb210d8d7961d050131f3</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-13 06:13:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9afd9f9dc3bdb210d8d7961d0501311a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Faculty &amp; HOD Dashboard default</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Student Attendance And Leave Management" source="x_1681222_studen_0">20d43fc1c3b17210d8d7961d050131c2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope>
+        <sys_update_name>sys_ux_screen_9afd9f9dc3bdb210d8d7961d0501311a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-13 06:13:14</sys_updated_on>
+    </sys_ux_screen>
+    <sys_translated_text action="DELETE" query="documentkey=9afd9f9dc3bdb210d8d7961d0501311a"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</application>
+        <file_path/>
+        <instance_id>7b3ed113ffab0614c812f8e4fc4fd9b2</instance_id>
+        <instance_name>dev280410</instance_name>
+        <name>sys_ux_screen_9afd9f9dc3bdb210d8d7961d0501311a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen"><sys_ux_screen action="INSERT_OR_UPDATE"><active>true</active><app_config display_value="Advanced Dashboards">02dc36706f01011089060168e25b3691</app_config><description/><disable_auto_reflow>false</disable_auto_reflow><disable_interoperable>false</disable_interoperable><event_mappings/><macroponent/><macroponent_config>{}</macroponent_config><name>Faculty &amp; HOD Dashboard default</name><order>0</order><parent_macroponent display_value="UXR Base Experience Shell - Advanced">47bcb58553030110aab9ddeeff7b12c2</parent_macroponent><required_translations>[ ]</required_translations><rollback_screen/><screen_condition/><screen_type display_value="Faculty &amp; HOD Dashboard">46fd5f9dc3bdb210d8d7961d050131f3</screen_type><sys_class_name>sys_ux_screen</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-12-13 06:13:14</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>9afd9f9dc3bdb210d8d7961d0501311a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Faculty &amp; HOD Dashboard default</sys_name><sys_overrides/><sys_package display_value="Student Attendance And Leave Management" source="x_1681222_studen_0">20d43fc1c3b17210d8d7961d050131c2</sys_package><sys_policy/><sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope><sys_update_name>sys_ux_screen_9afd9f9dc3bdb210d8d7961d0501311a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-12-13 06:13:14</sys_updated_on></sys_ux_screen><sys_translated_text action="delete_multiple" query="documentkey=9afd9f9dc3bdb210d8d7961d0501311a"/></record_update>]]></payload>
+        <payload_hash>-1400256330</payload_hash>
+        <record_name>Faculty &amp; HOD Dashboard default</record_name>
+        <reverted_from/>
+        <source>2836ff85c3b17210d8d7961d0501312c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-13 06:20:24</sys_created_on>
+        <sys_id>9f9fd791c3fdb210d8d7961d05013196</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b165e1aee0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-13 06:20:24</sys_updated_on>
+        <type>UX Screen</type>
+        <update_guid>defd9f9d91bdb2105b5d175efe2dbb21</update_guid>
+        <update_guid_history>defd9f9d91bdb2105b5d175efe2dbb21:1492670068,defd9f9d91bdb2105b5d175efe2dbb21:1492670068</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-13 06:20:24</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_screen">sys_ux_screen</sys_db_object>
+        <sys_id>0af6f488d3f34afe80f6ee11a418b464</sys_id>
+        <sys_metadata>9afd9f9dc3bdb210d8d7961d0501311a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Faculty &amp; HOD Dashboard default</sys_name>
+        <sys_package display_value="Student Attendance And Leave Management" source="x_1681222_studen_0">20d43fc1c3b17210d8d7961d050131c2</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope>
+        <sys_scope_delete display_value="">620be62f56ae4b63b6586b3ab65f9a61</sys_scope_delete>
+        <sys_update_name>sys_ux_screen_9afd9f9dc3bdb210d8d7961d0501311a</sys_update_name>
+        <sys_update_version display_value="sys_ux_screen_9afd9f9dc3bdb210d8d7961d0501311a">9f9fd791c3fdb210d8d7961d05013196</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-13 06:20:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,1299 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=36850000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Handles student leave routing to faculty &amp; HOD</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>student_leave_approval_flow</internal_name>
+        <label_cache>[{"name":"b9591eac-6fc6-4899-ac8f-963e08f9a5ca.approval_state","label":"4 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"3de92dff-6c72-467b-b170-7715525fb817":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"{{static.a986bbc5c3b17210d8d7961d0501315e}}","label":"HOD ","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{"b9591eac-6fc6-4899-ac8f-963e08f9a5ca":["approval_conditions"]}},{"name":"Created_1.current.number_of_days","label":"Trigger - Record Created➛Leave Request Record➛Number of Days","reference":"","reference_display":"Number of Days","type":"integer","base_type":"integer","parent_table_name":"x_1681222_studen_0_leave_request","column_name":"number_of_days","usedInstances":{"a4cbd5c3-2208-4146-8f93-12c39de26534":["condition"]}},{"name":"9ef159ec-ddb2-4915-beb7-9c43c3ae872c.approval_state","label":"1 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"879e2339-acb0-4b6e-a58c-87ea2536a3b3":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.student.faculty_mentor","label":"Trigger - Record Created➛Leave Request Record➛Student➛Faculty Mentor","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1681222_studen_0_student","column_name":"faculty_mentor","usedInstances":{"9ef159ec-ddb2-4915-beb7-9c43c3ae872c":["approval_conditions"]}},{"name":"Created_1.current.current_approver","label":"Trigger - Record Created➛Leave Request Record➛Current Approver","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1681222_studen_0_leave_request","column_name":"current_approver","usedInstances":{}},{"name":"Created_1.current","label":"Trigger - Record Created➛Leave Request Record","reference":"x_1681222_studen_0_leave_request","reference_display":"Leave Request","type":"reference","base_type":"reference","usedInstances":{"9ef159ec-ddb2-4915-beb7-9c43c3ae872c":["record"],"75d2ab5b-0a36-4f19-b252-7d9f5c4a3b08":["record"],"b9591eac-6fc6-4899-ac8f-963e08f9a5ca":["record"],"e64e3fa9-efb1-4825-afe5-53bc6c965d0a":["record"],"399ef180-e421-47e5-bdb0-3bfe90457644":["record"],"94c5cfcd-59de-4236-a6cd-129e22bf78a0":["record"]},"attributes":{}},{"name":"Created_1.current.reason","label":"Trigger - Record Created➛Leave Request Record➛Reason","reference":"","reference_display":"Reason","type":"string","base_type":"string","parent_table_name":"x_1681222_studen_0_leave_request","column_name":"reason","usedInstances":{"9ef159ec-ddb2-4915-beb7-9c43c3ae872c":["journal_field"],"b9591eac-6fc6-4899-ac8f-963e08f9a5ca":["journal_field"]}}]</label_cache>
+        <master_snapshot>f6626095c3397210d8d7961d05013100</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Student Leave Approval Flow</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>b98be699c339b210d8d7961d05013132</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-12 16:18:38</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f0fe589dc3f57210d8d7961d05013193</sys_id>
+        <sys_mod_count>46</sys_mod_count>
+        <sys_name>Student Leave Approval Flow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Student Attendance And Leave Management" source="x_1681222_studen_0">20d43fc1c3b17210d8d7961d050131c2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope>
+        <sys_update_name>sys_hub_flow_f0fe589dc3f57210d8d7961d05013193</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-13 02:57:00</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record display_value="Created 2025-12-12 18:56:56">7601f655c379b210d8d7961d050131d4</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=f0fe589dc3f57210d8d7961d05013193"/>
+    <sys_variable_value action="delete_multiple" query="document_key=f0fe589dc3f57210d8d7961d05013193"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1681222_studen_0_leave_request">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-13 02:32:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b98be699c339b210d8d7961d05013132</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-13 02:32:50</sys_updated_on>
+        <table>x_1681222_studen_0_leave_request</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>f0fe589dc3f57210d8d7961d05013193</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-13 02:32:50</sys_created_on>
+        <sys_id>fd8be699c339b210d8d7961d05013133</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-13 02:32:50</sys_updated_on>
+        <trigger display_value="">b98be699c339b210d8d7961d05013132</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=f0fe589dc3f57210d8d7961d05013193^sys_idNOT INfd8be699c339b210d8d7961d05013133"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=f0fe589dc3f57210d8d7961d05013193"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=f0fe589dc3f57210d8d7961d05013193^sys_idNOT INf4fed89dc3f57210d8d7961d050131e0"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>f0fe589dc3f57210d8d7961d05013193</id>
+        <name>Student Leave Approval Flow</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-12 16:18:38</sys_created_on>
+        <sys_id>f4fed89dc3f57210d8d7961d050131e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-12 16:18:38</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=f4fed89dc3f57210d8d7961d050131e0"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=f0fe589dc3f57210d8d7961d05013193^sys_idNOT IN404f54ddc3f57210d8d7961d050131b7,d84f94ddc3f57210d8d7961d05013180"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Student Leave Approval Flow">f0fe589dc3f57210d8d7961d05013193</model>
+        <model_id>f0fe589dc3f57210d8d7961d05013193</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_f0fe589dc3f57210d8d7961d05013193</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-12 16:19:58</sys_created_on>
+        <sys_id>404f54ddc3f57210d8d7961d050131b7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-12 16:33:37</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=404f54ddc3f57210d8d7961d050131b7"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Student Leave Approval Flow">f0fe589dc3f57210d8d7961d05013193</model>
+        <model_id>f0fe589dc3f57210d8d7961d05013193</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_f0fe589dc3f57210d8d7961d05013193</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-12 16:19:59</sys_created_on>
+        <sys_id>d84f94ddc3f57210d8d7961d05013180</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-12 16:33:37</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d84f94ddc3f57210d8d7961d05013180"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=f0fe589dc3f57210d8d7961d05013193"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f0fe589dc3f57210d8d7961d05013193"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=f0fe589dc3f57210d8d7961d05013193^sys_idNOT IN373f14ddc3f57210d8d7961d050131ae"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Student Leave Approval Flow">f0fe589dc3f57210d8d7961d05013193</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-12 16:19:57</sys_created_on>
+        <sys_id>373f14ddc3f57210d8d7961d050131ae</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-12 16:33:47</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VY227jNhD9FUFPLeACuviat22SRQOkG9Txtg9BKlDi0CZKS16JUuIu8u8d6mZZkh07VrbOSwBzKM7h4ZkzZB6+64K4IPQLfUZcAXpP576E0Cditl4BDks17PhkqWJL4lMig3CtX8gwhp7OwmA5g+VKEImTGRERDgYhhVC/MHt6QkQM9+vohuJK+H26TL6mnofx97NjDsemZVlOJGMKvmM4AkgCTgjfYogkTqU8wiTrP/MvblVYm5Zhb8EFDcHXLx4ee/qKhJhIKhDfayGukHjMIxMLDM82bcsyDGvcN92h7ZoWtQkYBi5YZ6WGXLaQs9k2PEvwKdCSkQZvIRB654t1OWOBtGccLclzxP/F1ceGmscAsXuQxcqfTs5HNuwtAu7B3UrywM9GMpxZMBDx0v+S4VdMAiOxkAWTOBJHuB6sFGQFIkfE7hfB07RI+Jn76e7yoAg8IspfRMqQu7GESBHOuEDqnYybKIjDFP30+vJueuX89Wl2+dv11Jle38+mN5ez6yv9Jd2X8y1WK2YIcyxOtp2X8vg/cxDqAKN15OBJ9vTIC/lKfvIkTwr9vfQ2mr4MfMpTVhq69opQtK3rYvf7hG0YO6XtVTIW8v77+o+mgrPB43Q7HBJCgezQrcsquq3uvAWabCGhurt9Cs5HDpFw3zD+JxHn9vRWDS8DCuJqs5yOwfkcVc39VSwVW0/El5EjA4dQ6lR4VFMR02uizvb28qqCw9jHD5zyPJo6Tmkr+bvl6IcXD1iFBTfpkhhnt/mS09jXAjw4/KN5cYjUSK3wNXazJPOcUXYPAjxZEQH7GlV//c6jiPvzCuoyacpBI2eZDsWkFVvKckcnJn/ssoibpCc1MmvFfHQlmyZjLjDLGKk6Ng3bZaYxMgaEUdswPKtSyU0wO1HKmiTepaKPq+coFaM4QHp1inPwRrUaDpJRsq3BggQlkdw2LruBZnYEzVLQavZnH+V/pSyz4attde7bWse9n9CE4Bf0UBs80AGZCJ7Qet/gfi7x/pmHQezTuh2pNTXua5sZ2k85fz936IQsCGE/gO0Z5+SBG9oL4RJ/3YH72cx0J9AHA03PRr9zB5OJ6xGLsdFwBJZZc78NjFZsH8L1XlFb0ibXXQ7YKpykTW9HeN8JABs+eDTA0x0wF2ar/2Wxj+F0Twt8/iLU0BE8fdnWDG8uOIUi1m21N1Inm/o+teLZeOINzNHIG+GrBSue9cElZt8akMloaI8HtYpvQNkHU7Yw80PeMuoVqoDscIOvWei8HufvKdsIpFTt6Pgu7eM9Nv2GZEkqnVIdi5aaShBqXwL/l5vNPO0esAGmD9qu2vUhKNTBau8Lww3konFfwNS/4vhWanXP3MHK2T2paiJJtvd68pMK+uPBhNntFsMmbRazAbMb5tlfLw6skGRnrbXdMw4VfNJaNzsvBm+QcE0m1RvDnitNV6SYnZNivR8p9snXqKIWd74j3wL2A7Ww9F5xSh9TOcEJWNW8rwINAxom0TjT8v8kAtXctSYXgJQKvC9jQk1lP9W1q12kCaVU8I8Fkt3AG90Mh7X8AnV+jaomhW5fwEBHZDCwd9yHJ/UXcBugV/Cefds6uiqStiLb27uOW7e+Zmv3qkh2WxEH9qVOd93enE7bdWt7em3Xpzeefe/3FhRn2lIe/wNgFx7fUB8AAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=f0fe589dc3f57210d8d7961d05013193^sys_idNOT IN03c1e415c3397210d8d7961d0501312c,06e12c15c3397210d8d7961d05013122,5861a8d1c3397210d8d7961d050131c2,c102ec15c3397210d8d7961d050131e4,fb4f18ddc3f57210d8d7961d050131a4,fe01ec91c3397210d8d7961d050131c3"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Student Leave Approval Flow">f0fe589dc3f57210d8d7961d05013193</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>62a43bc7-66c1-4df4-941d-1203a0ce5702</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-12 16:31:06</sys_created_on>
+        <sys_id>03c1e415c3397210d8d7961d0501312c</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-13 02:56:55</sys_updated_on>
+        <ui_id>e64e3fa9-efb1-4825-afe5-53bc6c965d0a</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1U22obMRD9FaPnZdmLYxy/lRpDoU3ALXlJg9BKY1tFe4kujl3jf+9oV+s4SZOaYCiF6m0uOnPO6KDbHZGCTMgQRJJepiOep3meJUk2HqbFKC/STOQMICURqVgJ2KmB11pgvGbK+cRu91EDsyBoGnOnNVR2v8e6kKZRbHsT2jDDV1IJrJPJ7V1EGqYR0YImk92zkt02QBUrQOHFac1diaCDT1PEOJVtf3ve031O38/AWAR0Kn0SS55PmkQENhYqAThuwZSBiJSsEszWeksmVjtMoGpxXantoWMlK9spLdnGyJ+IP0x83wJQGg9bOIQ0bKhfTi05XDdW1lWXsaxQ/eZq5crqqpPgdwsL5pQ92q0ziAeNp+xJdAwXX1f1w7yfN5NVqy6wVTVn6hAxa7UsnAXjnwMUtEspWdPIakkbXa9lexmplPFSYRAvVP2AM41cVjHjnneMC2LxDPPTNn3DtPQiviAMXt634um983M7GYEwbTW3gmn7UNhquJaN/YDAawg091Gwa3HxlgH45eN7H2E+WnZD09E4zbKMGutwPk2oArYGquHegbEv3fvZlwfzQ/l9Vv7myQyuOjKnCnly+RVhwcxPcsHLF2fz8vgveTkw+sfM/CcLJ9mbf9jRS7euNUf2NZZZZ767JMnRaD+A4+f70rKvdL3TuVAitoVBhx6drKEHmElQwvxGVG/dMICuw4DDV3w2/6ajpD3/f+Qz/sh3vwBMLZe+QggAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=03c1e415c3397210d8d7961d0501312c"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Student Leave Approval Flow">f0fe589dc3f57210d8d7961d05013193</flow>
+        <generation_source/>
+        <order>12</order>
+        <parent_ui_id>2febae22-178a-4e24-a21e-477513cf6de8</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-12 16:31:34</sys_created_on>
+        <sys_id>06e12c15c3397210d8d7961d05013122</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-13 02:56:55</sys_updated_on>
+        <ui_id>399ef180-e421-47e5-bdb0-3bfe90457644</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1U22obMRD9FaPnZdmLYxy/lRpDoU3ALXlJg9BKY1tFe4kujl3jf+9oV+s4SZOaYCiF6m0uOnPO6KDbHZGCTMgQRJJepiOep3meJUk2HqbFKC/STOQMICURqVgJ2KmB11pgvGbK+cRu91EDsyBoGnOnNVR2v8e6kKZRbHsT2jDDV1IJrJPJ7V1EGqYR0YImk92zkt02QBUrQOHFac1diaCDT1PEOJVtf3ve031O38/AWAR0Kn0SS55PmkQENhYqAThuwZSBiJSsEszWeksmVjtMoGpxXantoWMlK9spLdnGyJ+IP0x83wJQGg9bOIQ0bKhfTi05XDdW1lWXsaxQ/eZq5crqqpPgdwsL5pQ92q0ziAeNp+xJdAwXX1f1w7yfN5NVqy6wVTVn6hAxa7UsnAXjnwMUtEspWdPIakkbXa9lexmplPFSYRAvVP2AM41cVjHjnneMC2LxDPPTNn3DtPQiviAMXt634um983M7GYEwbTW3gmn7UNhquJaN/YDAawg091Gwa3HxlgH45eN7H2E+WnZD09E4zbKMGutwPk2oArYGquHegbEv3fvZlwfzQ/l9Vv7myQyuOjKnCnly+RVhwcxPcsHLF2fz8vgveTkw+sfM/CcLJ9mbf9jRS7euNUf2NZZZZ767JMnRaD+A4+f70rKvdL3TuVAitoVBhx6drKEHmElQwvxGVG/dMICuw4DDV3w2/6ajpD3/f+Qz/sh3vwBMLZe+QggAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=06e12c15c3397210d8d7961d05013122"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Student Leave Approval Flow">f0fe589dc3f57210d8d7961d05013193</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>a4cbd5c3-2208-4146-8f93-12c39de26534</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-12 16:29:16</sys_created_on>
+        <sys_id>5861a8d1c3397210d8d7961d050131c2</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-13 02:56:55</sys_updated_on>
+        <ui_id>b9591eac-6fc6-4899-ac8f-963e08f9a5ca</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Y32/aOhT+V6o8U+YkJATeqlWVdrV7J7XdXkoVOfZJ6yvjZIndlSH+9x0nDlBgFHVM3aa9IPn4/PjO8XeOHW7mnuDe2BsmeQCjUUAyn5CQkCRiJAkhC4fxMKSMeD1P0SmgZgWsqDiuH6g0VjCfv62AauCp32emqkDpxQL3uahLSWefnBpK2L2QHPe98c1tzytphR41VN54vrGlZyWkkmYg0fC8YGaKTk/enaOPQ9F21pcd3E34NgauufOeCivELYuH9Dx41KA4YLScyhp63pQqTnVRzbyxrgwKMGn+QcnZUuNeKN0mOqWPtfiK7sPA6uWAmTFXhOUydQXqalMIBh9KLQrVSjTNZFe4Qpqp+q/NwJYWcmqkXiutqdEflBayBdEizK/uiy+XXbwLoZrkHFpZMCqXK6p1JTKjobanARKamkxpWQp1l5ZV8SAaY4Qy7d9JXPRzWXzBmLW4U33KLO4+Foj2L1B+3og/0UrYJP5FN2i8aJJPPxsbt03DAU6bnNuEUatmlSj1Gfp8AIdw0XNEzdjeo2erk27drXj6mPpx4gdBkNbaYNSUpBLoA6QVfDZQ623KvrfbJ5fL7Zfx99riOGkOr3dwDk+Mt3Ny5G2WqWpdO+76+7nrJIeQNyGvQ16H6Ddj73PEhUEcRvgzzEPiBz5JIE4SNiKUJXEcDcLVIWM8REwlEpPW6HtF4SNO1SusmLrrGHkAuM7wzKHDvnDovgvbsbTuQjmGBkdjqB//phQ14nqjNq3k/ebp/Bwu23AflcC59s6efhxk8Ygk/JTnJDsdJGF0ShmQU4j9CCIes8gPf5j/xN839Hiyg0i5ALn+0qg11abeboKl/GWtcGHDPBnQB2DdaocLB/Z7SbhmaJYbI/t4DZEQ8kod8ee+ONheMsDa4P6/MJXawdsdL+R+OyR3PZSf0T4Wxw9IqzP+p81rk+Kb6e5hePiX4b8wwwfRXirAjqnGCsWFxVev8bydhVCfqdnHm/ncjmXB+nSUxFnGIhZm/hDfFjzhw1HscxIRP8QLZrG43W6CH3H1sg5ZvWuMhLrrkgNKs/zSdHZ7S+V6ZPVWckauTwbH+vB8vTb5M1/vbC8P8tHq3LnBcuD4Xp//E68FOfHGE08VCiZeb+JZrdQSohGjBoJbbjSy+XyxaCWmos6Bv7ZcWXM6qxvNmt0DR1I10ieSlulOfsw/aK5cgJNzxP3mWqzdMc9Xbfkvj2ntdxay+5DoMmkrJ9ZvmOhoN8zgb+NsfCqk3biyFwqOoBd30+03ERK0N28UAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5861a8d1c3397210d8d7961d050131c2"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Student Leave Approval Flow">f0fe589dc3f57210d8d7961d05013193</flow>
+        <generation_source/>
+        <order>10</order>
+        <parent_ui_id>00259b9f-59b3-44f5-9e19-2a9895aa9f2d</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-12 16:32:03</sys_created_on>
+        <sys_id>c102ec15c3397210d8d7961d050131e4</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-13 02:56:55</sys_updated_on>
+        <ui_id>94c5cfcd-59de-4236-a6cd-129e22bf78a0</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1U22obMRD9FbPPy7IXxzh+KzGGQpuAW/KSBqGVZm2B9hJdHLvG/97RrnbjJG1igqEUqre5aM45o4Pu9oHgwSwYA4+Ty2TCsiTL0jhOp+Mkn2R5kvKMAiRBGFS0BOxUwGrFMd5QaV1iv79SQA1wkkTMKgWVORywzoVuJN3d+jbMsLWQHOvB7O4+DBqqcKIBFcz2L0pm1wCRNAeJF+c1syUOHX2e44xT2fa3lz3dl/QdBsbcTyfCJbHk+CRxGMDWQMUB4QoqNYRBSStOTa12wcwoiwlUzW8quRs61qIyndKSbrX4ifPHsesrAKUxv4UhJH5D/XJqweCmMaKuuoyhuew3V0tbVtedBLdbKKiV5mi3VuM8aBxlR6JjWHxb14/LHm8hqladZytrRuUQUWOUyK0B7Z4DJLRLKWnTiGpFGlVvRHsZqZTRSmIQFbJ+REwtVlVEmeMd4YJotMD8vE3fUiWciK84Bi8fWvHkwTrcToYnTFrNrWDSPhS2aqZEYz7h4A14mofQ2zW/eMsA7PLpvY9mPll2S5LJNEnTlGhjEZ/ERALdAFHwYEGb1+794sqj5VD+mJW/OzKj647MqUKeXf6DMG/mZznv5YuzeXn6l7zsGf1jZn7PwnH65h929NKta/WRfbWhxuofNo4zXlCGy9sRJIWygL+27jvdH3QylIhhYNShhCdr6gcsBEiufyOyt7IHIBsPMHzNZ/NzMonb8/+HPuMPff8Lzek8xVIIAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c102ec15c3397210d8d7961d050131e4"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Student Leave Approval Flow">f0fe589dc3f57210d8d7961d05013193</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-12 16:20:13</sys_created_on>
+        <sys_id>fb4f18ddc3f57210d8d7961d050131a4</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-13 02:56:55</sys_updated_on>
+        <ui_id>9ef159ec-ddb2-4915-beb7-9c43c3ae872c</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1YTW/bOBD9K4HOjpeSLEX2LdggQBfdLZCkvcSBQFOjhAuaUkUyjdfwf9+hSNmO7TpG6iJt0YsBDufjzfDNkPLtPOBFMArOsjKC4TAik5CQmJAsYSSLYRKfpWcxZSToBZJOATUbYFVT4PqRCmMF8/mfDVANRR72mWkakHqxwP2Cq1rQ2SevhhL2wEWB+8Ho9q4X1LRBjxqaYDTf2NKzGnJBJyDQ8KJiZopOT95doI9D0XbWVx3cTfg2Bq4L7z3nVohbFg/pBfCkQRaA0UoqFPSCKZUF1VUzC0a6MSjApIsPUsyWGg9capfolD4p/h+6jyOrVwJmxnwRlsvcF6irTcUZfKg1r6STaDoRXeEqYabyH5eBLS2U1Ai9Vlqj0B/UFrIF4RCW1w/Vl6su3iWXbXIeragYFcsV1brhE6NB2dMAAW1NprSuubzP66Z65K0xQpn27wUu+qWovmBMxe9lnzKLu48Fov1LlF+04k+04TaJv9ENGi/a5PPPxsZ1aXjAeZuzSxi1FGt4rc/R5yN4hIueJ+qE7T16tjpp527F06c8TLMwiqJcaYNRc5ILoI+QN/DZgNLblH1vt0+ultuv4++NxXHSHl7v4ByeGW/n5MnbLnPpXHvuhvu56yWHkDcjb0Nej+gnY+9LxIVBGif4c1bGJIxCkkGaZWxIKMvSNBnEq0PGeIiYCiQmVeh7ReEjTtVrrJi87xh5ALjO8Nyjw77w6L4K27NUdaE8Q6OjMTRMf1KKGn6zURsneb95Ot+HyzbcR8lxrr2zp59Gk3RIsuK0KMnkdJDFySllQE4hDRNIipQlYfzN/CfhvqFXZDuIVHIQ6y8Npak2arsJlvLXtcKlDfNsQB+AdasdLj3YryXhm6Fdbozs4zVERsgbdcSv++Jge8kAa4P738o0cgdvd7yQ+25I7noov6B9LI4fkFZn/JfLa5Pim+nuYXj8m+E/MMMHyV4qwI6pxipZcItPrfHczUJQ53L28XYXjd3DW/dLyrDUs9wWpGoWi7vtLvgmX6/rkdXLxghQXZ8cUJzlt6a321ss3yWr15I38p0yONan59s1yq/5fmd7eVAOV+deGCwHsnX9BhgHDuQ4GI0DWUkYB71xYLVyS4hWjBoIbrnRyubzxcJJTEO9g3BtubIu6Ey1moo9QIGkaqXPJI7pXn7Mv2iufYCTC8T9xw1fu2Vertryfx7j7HcWsvuU6DJxlePrd0xytDtm8LtxNj4W8m5c2SsFR9Cru+nuf7HmSzJxFAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=fb4f18ddc3f57210d8d7961d050131a4"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Student Leave Approval Flow">f0fe589dc3f57210d8d7961d05013193</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>3de92dff-6c72-467b-b170-7715525fb817</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-12 16:27:47</sys_created_on>
+        <sys_id>fe01ec91c3397210d8d7961d050131c3</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-13 02:56:55</sys_updated_on>
+        <ui_id>75d2ab5b-0a36-4f19-b252-7d9f5c4a3b08</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1UXWvbMBT9K0HPxvgjDWnexkJgsLWQjb50RcjWTSKQZVcfabKQ/74rW07TdstCCYzB9HY/dO45Vwfd74jgZEKGwJP0Oh2VeZrnWZJk42FajPIizXjOAFISEcUqwE4NZa05xmsmnU/sdh81MAucpnHptAZl93usc2EaybZ3oQ0z5UpIjnUyuX+ISMM0IlrQZLJ7VbLbBqhkBUi8OK1LVyHo4NMUMc5l29+e93Rf0/czMOYBnQqfxJLnkyYRgY0FxQHHLZg0EJGKKc5srbdkYrXDBKrmt0puDx0roWyntGIbI34g/jDxfQtAaWXYwiGkYUP9cmpRwm1jRa26jGWF7DdXS1epm06C3y0smJP2aLfOIB40nrIn0TFcfF3VT/N+3kyoVl1gK+uSyUPErNWicBaMfw6Q0C6lYk0j1JI2ul6L9jJSqeKlxCBeyPoJZxqxVDErPe8YF8TiGeanbfqOaeFFfEEYvLxvxdNH5+d2MgJh2mpuBdP2obDVlFo09gMCryHQ3EfBrsXVKQOU18/vfYT5bNkNTUfjNMsyaqzD+TShEtgaqIZHB8a+de9nXx7MD+X3WfmbJzO46cicK+TF5d8IC2Z+kQtevrqYl8d/ycuB0T9m5j9ZOMlO/mFHL9261hzZ11hmnfnukiTnq5pTJISSgL+17YnOdzoYKsS3MOgmRGdr6QFmAiQ3vxDXWzgMoOsw4PAlX8zH6Shpz/+f+YI/88NPPHNQqUoIAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=fe01ec91c3397210d8d7961d050131c3"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=f0fe589dc3f57210d8d7961d05013193"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=f0fe589dc3f57210d8d7961d05013193^sys_idNOT IN47f1ec15c3397210d8d7961d05013184,5f706c51c3397210d8d7961d050131c5,68906091c3397210d8d7961d05013175,90e1e815c3397210d8d7961d05013109,b8b1e015c3397210d8d7961d0501317e,de41a0d1c3397210d8d7961d05013126"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">1c62ac55c3397210d8d7961d050131fe</block>
+        <comment/>
+        <connected_to>a4cbd5c3-2208-4146-8f93-12c39de26534</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Student Leave Approval Flow">f0fe589dc3f57210d8d7961d05013193</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <parent_ui_id>879e2339-acb0-4b6e-a58c-87ea2536a3b3</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-12 16:31:55</sys_created_on>
+        <sys_id>47f1ec15c3397210d8d7961d05013184</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-13 02:56:55</sys_updated_on>
+        <ui_id>00259b9f-59b3-44f5-9e19-2a9895aa9f2d</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">9862ac55c3397210d8d7961d050131e5</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Student Leave Approval Flow">f0fe589dc3f57210d8d7961d05013193</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-12 16:25:22</sys_created_on>
+        <sys_id>5f706c51c3397210d8d7961d050131c5</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-13 02:56:55</sys_updated_on>
+        <ui_id>879e2339-acb0-4b6e-a58c-87ea2536a3b3</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VyW7bMBD9FUNnWdBiObFvRgsDBdoGaIJc2kAYkaOYKEWqJBXHNfzvHWpxjMRBF+TYm/hmfTNvoH2gW9e0zt7olbXiXgXLr3dhIJTH6HsfKKgxWAZMKy6c0KrogDB4ANl6A1QOzcRtcLIG1kq3m6yaxmgyT4D5APLlwjYSdrd/EcI2QnKDQz8NGKpKUcFy/8zkdg0WEkqUlPnaGaHuKVxwelUxVMmCJSxL51kax+nlLCnnWZmkPAOEjPzGwHcjvcnHDglf5e3rEW7HStpw31YShwE+OlQcqXQF0mIY1KA4OG12R8Qg8Csln4CNUI7SBd750YqflDvNc+9YIXFk2BuPz2KYZQ+zjRYMr5puaB3ioJRDDNOyrdXnnoffAlZA0x63QEhrKR82vmnfxdBSdb3R2y9jwbVQHcHBKDUDeXyBozGUrUPrF4MSa0pU1NA0NJzC71R0wdRLHd1LekSV1Fsq6rUW9duOaEYQrQl/38G3YIRn8YnSUHDfZglWsKLTJaVzhigcurEUP1rfUE9woFL00yAHy4xo3IrqPODQ9SF8KeoTPe/3C6ySfIFsynmZTmeLJJ+WWF5MF2yWMRLO5UXKIhgUW1gHDg+Hb20cZ7xHSQEvNP9Wad/iLhaQV3kS5+fvYjY/dxdnLuL1Y0h/cwx+fX94C3Ec/z+G02MQtuhFPXDriv/zLdx54fcVbK8bjkxYauTGYx/G/4A37EgAgp1CW22+ewpP2OEXV9hiHVEGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">9862ec55c3397210d8d7961d05013101</block>
+        <comment/>
+        <connected_to>879e2339-acb0-4b6e-a58c-87ea2536a3b3</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Student Leave Approval Flow">f0fe589dc3f57210d8d7961d05013193</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>11</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-12 16:25:43</sys_created_on>
+        <sys_id>68906091c3397210d8d7961d05013175</sys_id>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-13 02:56:55</sys_updated_on>
+        <ui_id>2febae22-178a-4e24-a21e-477513cf6de8</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">9c62ac55c3397210d8d7961d050131fb</block>
+        <comment/>
+        <connected_to>3de92dff-6c72-467b-b170-7715525fb817</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Student Leave Approval Flow">f0fe589dc3f57210d8d7961d05013193</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id>a4cbd5c3-2208-4146-8f93-12c39de26534</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-12 16:31:26</sys_created_on>
+        <sys_id>90e1e815c3397210d8d7961d05013109</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-13 02:56:55</sys_updated_on>
+        <ui_id>62a43bc7-66c1-4df4-941d-1203a0ce5702</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">9c62ac55c3397210d8d7961d050131f7</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Student Leave Approval Flow">f0fe589dc3f57210d8d7961d05013193</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id>a4cbd5c3-2208-4146-8f93-12c39de26534</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-12 16:30:40</sys_created_on>
+        <sys_id>b8b1e015c3397210d8d7961d0501317e</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-13 02:56:55</sys_updated_on>
+        <ui_id>3de92dff-6c72-467b-b170-7715525fb817</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1UTW/bMAz9K4XPieGP2IhzKzYUGLCtwFr0shUGLdGJMFnyJDltFuS/j/JHGnQJNgw97mY9iuR71KP3ge5c2zl7r6+tFWsVrL4+zgKhPEbf+0BBg8EqYFpx4YRWZQ/Mgi3Izgc2ml9B2xq9RU4wF7aVsHs4H2UbIbnBsUsLhmo5NMFq/yrkdi2WEiqUVOTOGaHWlC44neoI6rhgMUuTPE2iKFku4ipPqzjhKSCkdG9KfDeRvvrYI7OLanw/wu3USRvuacXRLMBnh4oT/VUN0uIsaEBxcNrsjohB4LdKvgAboRyVC/zlZyt+Uu0ky/zFGkkjwyF4PJbj2AaYbbRgeNt6ggPioJJjDtOya9TnQYcfONbQSTcNnJDOUj1sPWnPYqRU323005ep4Y1QvcAxKDUDeTyBozFUnUPrHwYlNlSobOgdaTilf0zRJxOXJlxLOoS11E/U1DsoBOaJhzQjCG8If9/DD2CEV/GJylDyQLMCK1jZu43KOUMSDv1Yyh+dJzQIHKWUwzTogmVGtO6a+mxxZH2Y/W7VE5fu91WRFTECm+c1y+eLZVHMgS3reZGnGC3rAjIG4WBVkKV14PBw+NZFUcov2/utyr7FXlCrOouj7PxeLPJze3FmIy4vQ/KHZfDP95e7EEXR/2U4XQZhy8HUo7a++T/vwqM3/tDBDr7hyIQlIvce+zD93X1gRwYQ7BR60ua7l/CCHX4B9NkeGycGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">5462ac55c3397210d8d7961d050131e8</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Student Leave Approval Flow">f0fe589dc3f57210d8d7961d05013193</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id>879e2339-acb0-4b6e-a58c-87ea2536a3b3</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-12 16:28:51</sys_created_on>
+        <sys_id>de41a0d1c3397210d8d7961d05013126</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-13 02:56:55</sys_updated_on>
+        <ui_id>a4cbd5c3-2208-4146-8f93-12c39de26534</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2U22obMRCGX8Xoeln2EJsmdyEhUGgbaEJu2iBmpVlbVCttJa0d1/jdO9qDY1qbHuhl71b/aGb+GX3sjtkutF3wj/bae7U07OrTc8KUiRp975iBBtkVE9ZIFZQ1vBcStgbdxcAtbP3sc5dlJc5K0qXyrYbt05mwWCktHY59WnBULaBjV7sfQmHbItdQoaYqD8Eps6R0JelUZ1DnlyIXZbEoiywr3lzk1aKs8kKWgBDbTIk3k+3Zu15Jzs4T+5Hup07WyWgrzxKGLwGNRGpdg/aYsAaMhGDd9qA4BHlv9KuwUiZQORYvv3j1jWoX83m8WCPNKHAIHo583Nsgi5VVAu/baHBQAlR6zBFWd435MMwRN441dDpMGyel81QP22g6uhgt1Q8ru/k4NbxTph9wDGorQB9OEGgNVRfQx4dBjQ0V4g20LS2Ht86uVZ9MXpp0qemQ1tpuqGlkKAURjae0I0jvSL/t5SdwKk7xnspQ8mCzAq8E73mjcsHRCPt+LfxrFw0NA46j8GEbdMELp9pwTX3WOLreJz/DesTpbndDjxRQ8jwVnaMdhNR0TYWO25pLwnS/Hzg9QfGfJf8Lxi9hXs/zbH6a8YvFKcZP0H0e7OIXYMen+E2usyz7D/Yx2MrzAdBxtr75X3P9HCEeOviBG4lCeTLyGLW30786BrYEgBLH0sa6L3GEV23/HUnCOdn1BQAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=f0fe589dc3f57210d8d7961d05013193"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=f0fe589dc3f57210d8d7961d05013193"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_f0fe589dc3f57210d8d7961d05013193</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-12 16:19:59</sys_created_on>
+        <sys_id>d44f94ddc3f57210d8d7961d05013187</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Student Attendance And Leave Management" source="x_1681222_studen_0">20d43fc1c3b17210d8d7961d050131c2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-12 16:19:59</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_f0fe589dc3f57210d8d7961d05013193</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-12 16:19:59</sys_created_on>
+        <sys_id>dc4f94ddc3f57210d8d7961d0501317c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Student Attendance And Leave Management" source="x_1681222_studen_0">20d43fc1c3b17210d8d7961d050131c2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-12 16:19:59</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_f0fe589dc3f57210d8d7961d05013193"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_f0fe589dc3f57210d8d7961d05013193"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Handles student leave routing to faculty &amp; HOD</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>student_leave_approval_flow</internal_name>
+        <label_cache>[{"name":"Created_1.current","label":"Trigger - Record Created➛Leave Request Record","reference":"x_1681222_studen_0_leave_request","reference_display":"Leave Request","type":"reference","base_type":"reference","usedInstances":{"9ef159ec-ddb2-4915-beb7-9c43c3ae872c":["record"],"75d2ab5b-0a36-4f19-b252-7d9f5c4a3b08":["record"],"b9591eac-6fc6-4899-ac8f-963e08f9a5ca":["record"],"e64e3fa9-efb1-4825-afe5-53bc6c965d0a":["record"],"399ef180-e421-47e5-bdb0-3bfe90457644":["record"],"94c5cfcd-59de-4236-a6cd-129e22bf78a0":["record"]},"attributes":{}},{"name":"Created_1.current.current_approver","label":"Trigger - Record Created➛Leave Request Record➛Current Approver","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1681222_studen_0_leave_request","column_name":"current_approver","usedInstances":{}},{"name":"Created_1.current.student.faculty_mentor","label":"Trigger - Record Created➛Leave Request Record➛Student➛Faculty Mentor","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1681222_studen_0_student","column_name":"faculty_mentor","usedInstances":{"9ef159ec-ddb2-4915-beb7-9c43c3ae872c":["approval_conditions"]}},{"name":"9ef159ec-ddb2-4915-beb7-9c43c3ae872c.approval_state","label":"1 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"879e2339-acb0-4b6e-a58c-87ea2536a3b3":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.number_of_days","label":"Trigger - Record Created➛Leave Request Record➛Number of Days","reference":"","reference_display":"Number of Days","type":"integer","base_type":"integer","parent_table_name":"x_1681222_studen_0_leave_request","column_name":"number_of_days","usedInstances":{"a4cbd5c3-2208-4146-8f93-12c39de26534":["condition"]}},{"name":"{{static.a986bbc5c3b17210d8d7961d0501315e}}","label":"HOD ","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{"b9591eac-6fc6-4899-ac8f-963e08f9a5ca":["approval_conditions"]}},{"name":"b9591eac-6fc6-4899-ac8f-963e08f9a5ca.approval_state","label":"4 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"3de92dff-6c72-467b-b170-7715525fb817":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>Student Leave Approval Flow</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Student Leave Approval Flow">f0fe589dc3f57210d8d7961d05013193</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-12 16:33:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f6626095c3397210d8d7961d05013100</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-13 02:32:50</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=f6626095c3397210d8d7961d05013100"/>
+    <sys_variable_value action="delete_multiple" query="document_key=f6626095c3397210d8d7961d05013100"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=f6626095c3397210d8d7961d05013100"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=f6626095c3397210d8d7961d05013100^sys_idNOT IN36626095c3397210d8d7961d05013101"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>f6626095c3397210d8d7961d05013100</id>
+        <name>Student Leave Approval Flow</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-12 16:33:48</sys_created_on>
+        <sys_id>36626095c3397210d8d7961d05013101</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-12 16:33:48</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=36626095c3397210d8d7961d05013101"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=f6626095c3397210d8d7961d05013100^sys_idNOT IN32626095c3397210d8d7961d05013103,3a626095c3397210d8d7961d05013115"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Student Leave Approval Flow">f6626095c3397210d8d7961d05013100</model>
+        <model_id>f6626095c3397210d8d7961d05013100</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_f6626095c3397210d8d7961d05013100</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-12 16:33:48</sys_created_on>
+        <sys_id>32626095c3397210d8d7961d05013103</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-13 02:32:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=32626095c3397210d8d7961d05013103"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Student Leave Approval Flow">f6626095c3397210d8d7961d05013100</model>
+        <model_id>f6626095c3397210d8d7961d05013100</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_f6626095c3397210d8d7961d05013100</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-12 16:33:48</sys_created_on>
+        <sys_id>3a626095c3397210d8d7961d05013115</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-13 02:32:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3a626095c3397210d8d7961d05013115"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=f6626095c3397210d8d7961d05013100"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f6626095c3397210d8d7961d05013100"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=f6626095c3397210d8d7961d05013100^sys_idNOT INba626095c3397210d8d7961d05013152"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Student Leave Approval Flow">f6626095c3397210d8d7961d05013100</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-12 16:33:48</sys_created_on>
+        <sys_id>ba626095c3397210d8d7961d05013152</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-12 16:33:48</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VY227jNhD9FUFPLeACuviat22SRQOkG9Txtg9BKlDi0CZKS16JUuIu8u8d6mZZkh07VrbOSwBzKM7h4ZkzZB6+64K4IPQLfUZcAXpP576E0Cditl4BDks17PhkqWJL4lMig3CtX8gwhp7OwmA5g+VKEImTGRERDgYhhVC/MHt6QkQM9+vohuJK+H26TL6mnofx97NjDsemZVlOJGMKvmM4AkgCTgjfYogkTqU8wiTrP/MvblVYm5Zhb8EFDcHXLx4ee/qKhJhIKhDfayGukHjMIxMLDM82bcsyDGvcN92h7ZoWtQkYBi5YZ6WGXLaQs9k2PEvwKdCSkQZvIRB654t1OWOBtGccLclzxP/F1ceGmscAsXuQxcqfTs5HNuwtAu7B3UrywM9GMpxZMBDx0v+S4VdMAiOxkAWTOBJHuB6sFGQFIkfE7hfB07RI+Jn76e7yoAg8IspfRMqQu7GESBHOuEDqnYybKIjDFP30+vJueuX89Wl2+dv11Jle38+mN5ez6yv9Jd2X8y1WK2YIcyxOtp2X8vg/cxDqAKN15OBJ9vTIC/lKfvIkTwr9vfQ2mr4MfMpTVhq69opQtK3rYvf7hG0YO6XtVTIW8v77+o+mgrPB43Q7HBJCgezQrcsquq3uvAWabCGhurt9Cs5HDpFw3zD+JxHn9vRWDS8DCuJqs5yOwfkcVc39VSwVW0/El5EjA4dQ6lR4VFMR02uizvb28qqCw9jHD5zyPJo6Tmkr+bvl6IcXD1iFBTfpkhhnt/mS09jXAjw4/KN5cYjUSK3wNXazJPOcUXYPAjxZEQH7GlV//c6jiPvzCuoyacpBI2eZDsWkFVvKckcnJn/ssoibpCc1MmvFfHQlmyZjLjDLGKk6Ng3bZaYxMgaEUdswPKtSyU0wO1HKmiTepaKPq+coFaM4QHp1inPwRrUaDpJRsq3BggQlkdw2LruBZnYEzVLQavZnH+V/pSyz4attde7bWse9n9CE4Bf0UBs80AGZCJ7Qet/gfi7x/pmHQezTuh2pNTXua5sZ2k85fz936IQsCGE/gO0Z5+SBG9oL4RJ/3YH72cx0J9AHA03PRr9zB5OJ6xGLsdFwBJZZc78NjFZsH8L1XlFb0ibXXQ7YKpykTW9HeN8JABs+eDTA0x0wF2ar/2Wxj+F0Twt8/iLU0BE8fdnWDG8uOIUi1m21N1Inm/o+teLZeOINzNHIG+GrBSue9cElZt8akMloaI8HtYpvQNkHU7Yw80PeMuoVqoDscIOvWei8HufvKdsIpFTt6Pgu7eM9Nv2GZEkqnVIdi5aaShBqXwL/l5vNPO0esAGmD9qu2vUhKNTBau8Lww3konFfwNS/4vhWanXP3MHK2T2paiJJtvd68pMK+uPBhNntFsMmbRazAbMb5tlfLw6skGRnrbXdMw4VfNJaNzsvBm+QcE0m1RvDnitNV6SYnZNivR8p9snXqKIWd74j3wL2A7Ww9F5xSh9TOcEJWNW8rwINAxom0TjT8v8kAtXctSYXgJQKvC9jQk1lP9W1q12kCaVU8I8Fkt3AG90Mh7X8AnV+jaomhW5fwEBHZDCwd9yHJ/UXcBugV/Cefds6uiqStiLb27uOW7e+Zmv3qkh2WxEH9qVOd93enE7bdWt7em3Xpzeefe/3FhRn2lIe/wNgFx7fUB8AAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=f6626095c3397210d8d7961d05013100^sys_idNOT IN32626095c3397210d8d7961d0501314b,32626095c3397210d8d7961d05013150,7e626095c3397210d8d7961d0501314c,be626095c3397210d8d7961d0501314d,fe626095c3397210d8d7961d05013149,fe626095c3397210d8d7961d0501314e"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Student Leave Approval Flow">f6626095c3397210d8d7961d05013100</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>a4cbd5c3-2208-4146-8f93-12c39de26534</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-12 16:33:48</sys_created_on>
+        <sys_id>32626095c3397210d8d7961d0501314b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-12 16:33:48</sys_updated_on>
+        <ui_id>b9591eac-6fc6-4899-ac8f-963e08f9a5ca</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Yy27bOBT9lYBrx0NZlix7F8QI0KIPIEm7iQOBIqmEA1pyRTKNR/C/91KiHrUT15lxF5l0E4D3QZ17fc4lmZsSCYZmaBKlIz6djnDiYexjHAUURz5P/Ek48QnFaIAysuQQWXCaFwzWD0QaayjL84ITzVnsDakpCp7pzQb8TKiVJOuvLgws9F5IBn40u7kdoBUpYEfNCzQrt1yHQpIk4RJCLxtM2xj1emXXLKdmCbhi0Rg/uMy585y8m4MHkiwcPED8UfOMccCREqn4AC1JxojOizWa6cKAAWpmnzO5biPuRabrOpfkUYl/4MP+yMalHAqjrgftMnb9qc3pnGhyBTtTbYq2XbmgXNUtYTwlRurzvq0O+LzSIs/qFE0S2WTn0iyzT3VDULtB7+cwCkDwla3TIq/LSq/u8++XDcgLkVUdcSXKnBLZrojWhUiMtnBKxCWvWrwkq5XI7uJVkT+IKhmgLId3EhbDVObf4ZtK3GVDQi3uIXSVDC/APq/MX0khbBEfYRtI3gyQWqtzSZTqSoEext+MRVIX5kqIqy7ULbB5tBArfQZfeeAO82bg6J7QvdyiHZXq7Tq2P8ZeGHmj0ShW2sBXYxxLTh54XPBvhiu9S/wP1n1y2bpfpoIDkDYquHZQt5A7DVTLuPL9LIEq7eRT7XAK8PYrwFk6CdTceUIBEX5FCnBlvXoJ/Ir9fBz6AfyZpD72Rh6OeBhFdIoJjcIwGPsdhwAB1EAksJso2LvTwREG/AEwGmqfORwgI4fjWYCO7gp+mOxui+pXjdHRfPRCmj8/6b3wLRHdiOutLteWnT7/HkXYz33JBAzUd5ZH4SgJpzhipyzFyek48oNTQjk+5aEX8ICFNPD836Ai7O2bzCx6gqSp4LJ/dVKaaKN2pdTaXyaoAxDtCOrCQXoOqpNTtXzq9Kjyt06P48kqwvg16eotXaHoXrLx3iHyd26K7An2tyN7i/2t/WXsPwBQw/73NaJt8m8D/Tfc9/9w///P/XGwl2q9S3g7T2meMWERq54C6inM1Vm2/nJTlnbsCzok0yhMEhpQP/EmcC9iEZtMQ4/hAHs+HGmbze2uaP7LVi/T2QHFt+9yI7n6VTOcyrqbnEvqK627/zmnU9v4WC/1Vya2t/JSoXu5lk47bjEDDSK6/1QvF6iGvUCzBcryjC/QYIFsVGzJVZkhAsC1jspWlptNbTEFcRt4vWWXzchaVZGK3nMG3KysP1niSgzOfoz/ix3Qk0Z/c8NP5nVTdtvUPJQanHVfxM4pd+UCqp3+uhb90y442mk3/iO/YzyL4maM2qMMpt8RNXn7A2nQMOssFgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=32626095c3397210d8d7961d0501314b"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Student Leave Approval Flow">f6626095c3397210d8d7961d05013100</flow>
+        <generation_source/>
+        <order>12</order>
+        <parent_ui_id>2febae22-178a-4e24-a21e-477513cf6de8</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-12 16:33:48</sys_created_on>
+        <sys_id>32626095c3397210d8d7961d05013150</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-12 16:33:48</sys_updated_on>
+        <ui_id>399ef180-e421-47e5-bdb0-3bfe90457644</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVy27iMBT9FeQ1ipJAEWU3AiGNxLQSHbHpVJaxb6hHzqN+UBjEv89N4gQEbYdK3aBhd1/2OTfn4McdkYKMSB9EGN1GA96Ler04DONhP1oOessoFj0GEJEuyVgK2KmB51pgvGbKlYndbqyBWRA0CrjTGjK732NdSFMotl34NszwZ6kE1sno8alLCqbxRAuajHYnpUshKbYEha3zBtMpRrstyljk3KWIi8omOfOTE1/pfJ9gBYdKOFHYJbCxkAlAIAlTBrokZZlgNtdbMrLaYQJJi/tMbduOZ5nZmmjKNkb+wZv7YdmXADLjfgltSP2C6nQyYZY94MncOt3uK5ccTL0TAQlzyo6Pc3XDfWFlntUjli1VM50rl2Z39UZIe8DR93AGQUBR8iyR17SSh+f8dd6AnMqsWomnqHLOVBsxa7VcOlvC2RFQUO04ZUUhsxUtdL6W1TBCSYOVwiBIVP6Kdxq5ygLGS9wBbpUFU8xPqvSCaVmS+IHH4PC+S8zWjBUz5kAFd0hfXImkJuYp0GoL1QpopYRymGtZ2G941Ro88H3Xi35585HC+O1BUEdnHoS/odFgGMVxTI11eD8NqQK2BqrhxYGx5x6YleXOvC1/zhAXwG0M8bOSwdvwvSfOcrPj2c5dXfCOuPkyRwyvyRGextVb4l9GCOMP/2qPlFRp3xyZwFhmnfnlwrCHcv0NHB+Cc+G/0/U5/V+AstH/VIIS5g3YjfghRXgWaE3jxAC+2Fn4YvssfJkLokFY/a7IC//N6/D0F0spdZoUCQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=32626095c3397210d8d7961d05013150"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Student Leave Approval Flow">f6626095c3397210d8d7961d05013100</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>3de92dff-6c72-467b-b170-7715525fb817</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-12 16:33:48</sys_created_on>
+        <sys_id>7e626095c3397210d8d7961d0501314c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-12 16:33:48</sys_updated_on>
+        <ui_id>75d2ab5b-0a36-4f19-b252-7d9f5c4a3b08</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVW2viQBj9KzLPEnKxYn1bFGHBbcEuvnTLMGY+dWBy6Vysrvjf95tkEkWLbaEvsnn7bjPnnHwned4TwcmQ9ICH0X3UT5MoSeIwjAe9aNFPFlHMEwYQkS7JWQbYqSAtFMd4w6R1if1+pIAZ4DQKUqsU5OZwwDoXupRsN/dtmEnXQnKsk+HzS5eUTOGJBhQZ7s9Kn4Uk2QIkts4aTOcYza50MS9SmyEuKprk1E+OfaXzc4wVHHJworBLYGsg54BAlkxq6JKM5ZyZQu3I0CiLCSTNH3O5azvWIjc10YxttfiLN/dC17cEZJZ6EdqQeoHq9HLMDHvCk1NjVatXIVLQtSYclsxKMzrN1Q2PpRFFXo8YtpDNdCFtlj/UipD2gJP3YTWCgNLxdMhrWsundfE2a0BORF5J4inKImWyjZgxSiyscXD2BCRUGmesLEW+oqUqNqIaRihZsJIYBEtZvOGdWqzygKUOd4CqsmCC+XGVnjMlHIlfeAwOH7pE7/RIMq2PVFBD+modkpqYp0ArFSoJaLUJbjhVojQ/8KoNeOCHrl/6xd21DUvvjwt1cuZx8bc06g+iOI6pNhbvpyGVwDZAFbxa0ObSA1NX7sza8tcM8Qm4jSF+V2vwPnzviYvc9HS281AXvCPuvs0Rg1tyhKdx85b4yAhhfPVTe7JJ1e7rExNow4zVf2wYJnxdcIoQkSTwy+W/0vk1H3wCbeODiQDJ9TvwGxNAhhAN0JrOmRF8sTP3xfb38G1uiPph9dyQJ/6bv8TLP22FdhYcCQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7e626095c3397210d8d7961d0501314c"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Student Leave Approval Flow">f6626095c3397210d8d7961d05013100</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>62a43bc7-66c1-4df4-941d-1203a0ce5702</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-12 16:33:48</sys_created_on>
+        <sys_id>be626095c3397210d8d7961d0501314d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-12 16:33:48</sys_updated_on>
+        <ui_id>e64e3fa9-efb1-4825-afe5-53bc6c965d0a</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVy27iMBT9FeQ1ipJAEWU3AiGNxLQSHbHpVJaxb6hHzqN+UBjEv89N4gQEbYdK3aBhd1/2OTfn4McdkYKMSB9EGN1GA96Ler04DONhP1oOessoFj0GEJEuyVgK2KmB51pgvGbKlYndbqyBWRA0CrjTGjK732NdSFMotl34NszwZ6kE1sno8alLCqbxRAuajHYnpUshKbYEha3zBtMpRrstyljk3KWIi8omOfOTE1/pfJ9gBYdKOFHYJbCxkAlAIAlTBrokZZlgNtdbMrLaYQJJi/tMbduOZ5nZmmjKNkb+wZv7YdmXADLjfgltSP2C6nQyYZY94MncOt3uK5ccTL0TAQlzyo6Pc3XDfWFlntUjli1VM50rl2Z39UZIe8DR93AGQUBR8iyR17SSh+f8dd6AnMqsWomnqHLOVBsxa7VcOlvC2RFQUO04ZUUhsxUtdL6W1TBCSYOVwiBIVP6Kdxq5ygLGS9wBbpUFU8xPqvSCaVmS+IHH4PC+S8zWjBUz5kAFd0hfXImkJuYp0GoL1QpopYRymGtZ2G941Ro88H3Xi35585HC+O1BUEdnHoS/odFgGMVxTI11eD8NqQK2BqrhxYGx5x6YleXOvC1/zhAXwG0M8bOSwdvwvSfOcrPj2c5dXfCOuPkyRwyvyRGextVb4l9GCOMP/2qPlFRp3xyZwFhmnfnlwrCHcv0NHB+Cc+G/0/U5/V+AstH/VIIS5g3YjfghRXgWaE3jxAC+2Fn4YvssfJkLokFY/a7IC//N6/D0F0spdZoUCQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=be626095c3397210d8d7961d0501314d"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Student Leave Approval Flow">f6626095c3397210d8d7961d05013100</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-12 16:33:48</sys_created_on>
+        <sys_id>fe626095c3397210d8d7961d05013149</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-12 16:33:48</sys_updated_on>
+        <ui_id>9ef159ec-ddb2-4915-beb7-9c43c3ae872c</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1YXW/aPBT+K5WvKa9DSBq4q4oqbdqH1Ha7KVVkHKf1ZJIstrvyIv77jmPnY0AZbOyi626QfI6P85yH57Hj3C4RT9AYnUXpgI1GAzzzMPYxjgKKI5/N/LPwzCcUox7KyJzBzJLRvExg/EiENoHl8qJkRLEk9vpUlyXL1GoF+YTLQpDFZzcNIvSBiwTyaHx710MFKWFFxUo0Xq6l9oUkyIwJmHpVY1rHqBaFGSc51XPAFfM6+M5VTlzm5M0EMlBk4OAeYk+KZQkDHCkRkvXQnGQJUXm5QGNVaghAz8nHTCyaGQ88U7bPOXmS/H94sD8w81IGjVHHQTOMHT82nE6IItewMlW6bOjKOWXSUpKwlGihLroxO+FjoXie2RJFZqKuzoWeZx8sIahZoPN3aAkgWGH6NMhtW+n1Q/7tqgZ5ybOKEdeiyCkRzYgoVfKZVgbOEjHBKornpCh4dh8XZf7Iq2KAMu/fCxj0U5F/g2dKfp/1CTW4+8Aq6V9CfFKFP5OSmybewzJQvOohuZAXgkjZtgIcxl+1QWIbcy3EFQuWAlNHS16oc3jKI3OYVz0n9xndqS3aSsku16r9KfbCyBsMBrFUGp4a41gw8sjikn3VTKpN4b8z6ZOrJn2YC/ZAWrvgxkFdQ+48UA3jKvejBaqykw824Rzg7XaAi7QWsNrZ4oAIvyAHuLZevAV+pn42DP0Afs5SH3sDD0csjCI6woRGYRgM/VZDgAB6IALUTSSs3frgCBv8HjBqaZ87HGAjh+NZgE7uEv6Y7H5N6td10Ml8cKDMn9/pvfA1CV3zmzWWbWSD5z/jCPO4TxmHDfWN0VE4mIUjHCWnSYpnp8PID04JZfiUhV7AgiSkgef/ARdhb9fOnERbRJpyJrqvTlIRpeWmlZr4YYbaA9GGoS4dpOegOjtVw22nR1W/dnocz1YRxi/JV6/pFYruFBvrHCJfcl1mW9TfbNlr6m/ih6l/D0C1+t9aROviXwf6K9r3/2n/79f+MNgptc5LeLOf0jxLuEEsOw6wuzCT59ni0+2We3Tf3jFUPyUUyF/EhqK8XK3uNl3zW2sd5rQ92m9u5low+TM6nM/adzlX1PVa+wboks5vw2Pd1V+Y3V7LXYXu1Fo6arWVaCAINN/9NDVFFvYUjacoyzM2Rb0pMrNiI64qDDMAXJOoYsvlamUjuiRuAa8zbKsTspDVTEkfWALarKI/ROLKDC5+jC9je3BS+2+i2cnEkrJJU31VqnFaXvjGOXftJlQr/XfDu+ddcLTzbvjPfse4GMX1NmoOM9j9jujJu+/U0+/ILhYAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=fe626095c3397210d8d7961d05013149"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Student Leave Approval Flow">f6626095c3397210d8d7961d05013100</flow>
+        <generation_source/>
+        <order>10</order>
+        <parent_ui_id>00259b9f-59b3-44f5-9e19-2a9895aa9f2d</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-12 16:33:48</sys_created_on>
+        <sys_id>fe626095c3397210d8d7961d0501314e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-13 02:32:50</sys_updated_on>
+        <ui_id>94c5cfcd-59de-4236-a6cd-129e22bf78a0</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVy2rjMBT9laC1CbaThjS7oSEw0GmhHbrpFHEjXTcC+VE90mRC/n2ubdkJTekDuinj3X1J5xzfY9/vmJJsxsYo4+Q8mYhRMhqlcZxOx8lyMlomqRwBYsIiVkCO1GlQlEZSvAbt68Rud2EQHEqeDIU3Bgu331NdKltp2N6FNsqIldKS6mx2/xCxCgyd6NCw2e5F6aOQNCxRU+tNh+klRret6liWwueEi6sueRkm56Ey+DmnCg3VcJI4YrhxWEgkIBloixHLoZDgSrNlM2c8JYi0vC70tu9YqcK1RHPYWPWXbh7HdV+GxEwEEfqQB4HadDYHB7d0snDe9HqVSqBtNZGYgdfu4jjXNlxXTpVFO+JgqbvpUvu8uGoVYf0BR+/DWwKBVc2zRt7Sym5X5fNNB3KhikaSQFGXAnQfgXNGLb2r4ewYamw0zqGqVPHIK1OuVTNMUPLho6ZgmOnyme606rEYgqhxD0lVGC4oP2/Sd2BUTeIXHUPD+4jZrb3QYO2BCmnIn3yNpCUWKPBGhUYC3mxCPSyMqtwPumqNAfg+Cku/PHtrw8T5YaGOzjws/oYnk2mSpim3ztP9POYaYY3c4JNH6049cFmXBzd9+XOG+ADczhC/mzV4HX7wxEnu8nh2cNUWgiPOvswR0+/kiEDj21viPSPE6Zuf2qNNanbfHpnAOnDe/vFxPJIZCJJzywkmEUV5aoB3uj/nhw+g7vywUKilfYVGZwbMCaZD3tJ6YYhQHNyFYv+b+DJXJJO4eb6RN/6bv8XDP+tosrIkCQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=fe626095c3397210d8d7961d0501314e"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=f6626095c3397210d8d7961d05013100"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=f6626095c3397210d8d7961d05013100^sys_idNOT IN32626095c3397210d8d7961d05013144,3e626095c3397210d8d7961d05013146,b2626095c3397210d8d7961d05013148,b6626095c3397210d8d7961d05013140,b6626095c3397210d8d7961d05013145,ba626095c3397210d8d7961d05013142"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">9c62ac55c3397210d8d7961d050131f7</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Student Leave Approval Flow">f6626095c3397210d8d7961d05013100</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id>a4cbd5c3-2208-4146-8f93-12c39de26534</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-12 16:33:48</sys_created_on>
+        <sys_id>32626095c3397210d8d7961d05013144</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-13 02:32:50</sys_updated_on>
+        <ui_id>3de92dff-6c72-467b-b170-7715525fb817</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8lYBnWdDDEizfAgcBCqQN0AS5tIGwIimbKEWqImXHFfzvXephG62DNmiOvYmz3N3Z4Q7UEd3aurXmUV8bI9aKLL88e0Qoh+F3RxRUnCwJ1YoJK7TKe8AjW5CtC2w0u4K6bvSWM4SZMLWE/dPlKN0IyRo+dqmhwVqWN2TZ/RISDJPLAMowoyGNozSOgiBazMMijYswYjFwiLGghIJLvLqa6F3d9Yj3Km+7rx1ubCPUejzfjVUeJlA3zLEKA4/wF8sVQ/bLEqThHqlAMbC62R+RhgO7V/IEbISyWI64yy9G/MCGUZK4iyXHESkfgsdjPqo2wOUNWEAqLbVtM16lGy0oN4M4jJfQSrs6x4YL97UbdUixUMgpW8u2Up8GRcixwPRIiLQGSfDaTeqoj3OUDxu9+zyxvBWqV2UMSk1BHk9gUbuitY5PR7jkFRbKK3x7VDR3CyD6ZORS+WuJB7+UeodN3db5QB1xH4UF/xbxmx5+gka4KT5iGUweaBZgBM37DcVyKBMnB4+YvVlJMOY0JKqbf28dxWHkcbh80Mel0EbU9ho7b/k4x8H7feHPdr3riizJQg50lpY0nc0XWTYDuihnWRrzYFFmkFDwh4UHmRsLlh8OX9sgiNnrJnmvsm9zFxYtkzBILrtrnl5y1wVfvdFS0R8s5d7zLx0VBMF/S/2zpYTJByOMs/XN39FRz84+Q8+j1lQYpPbosA/Tn8YF9rhcgp5DO918c0OdsMNPD2kOT7MGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">1c62ac55c3397210d8d7961d050131fe</block>
+        <comment/>
+        <connected_to>a4cbd5c3-2208-4146-8f93-12c39de26534</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Student Leave Approval Flow">f6626095c3397210d8d7961d05013100</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <parent_ui_id>879e2339-acb0-4b6e-a58c-87ea2536a3b3</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-12 16:33:48</sys_created_on>
+        <sys_id>3e626095c3397210d8d7961d05013146</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-13 02:32:50</sys_updated_on>
+        <ui_id>00259b9f-59b3-44f5-9e19-2a9895aa9f2d</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">9862ec55c3397210d8d7961d05013101</block>
+        <comment/>
+        <connected_to>879e2339-acb0-4b6e-a58c-87ea2536a3b3</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Student Leave Approval Flow">f6626095c3397210d8d7961d05013100</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>11</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-12 16:33:48</sys_created_on>
+        <sys_id>b2626095c3397210d8d7961d05013148</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-13 02:32:50</sys_updated_on>
+        <ui_id>2febae22-178a-4e24-a21e-477513cf6de8</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">9862ac55c3397210d8d7961d050131e5</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Student Leave Approval Flow">f6626095c3397210d8d7961d05013100</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-12 16:33:48</sys_created_on>
+        <sys_id>b6626095c3397210d8d7961d05013140</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-13 02:32:50</sys_updated_on>
+        <ui_id>879e2339-acb0-4b6e-a58c-87ea2536a3b3</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXW/aMBT9K8jPIcoHoYU3RIU0qVulterLVkU3tlOsOXEWO6VZxH/fdZwAWpk2tD7uDZ/7de7JPaIjqjFVY/SDWmktnkuy/PLkEVFaDH93pISCkyWhqmTCCFWmPeCRF5CNDUBueD0xWz7ZAG2kaSerqqoVhidAbQHmMqErCe3jBSV0KySr+cCnghqnYhVZdr+EBMOOeQB5uKAhjaN5HAVBdD0Ls3mchRGLgUOMDSVkXGLqelxkctsj3m83NG1lcW1qUT4P79uhy/0IqppZVmHgEf5qeMk48slBau6RAkoGRtXtAak5sLtSHoGtKA22Izb5VYsfODBKEpuYc1yRchc8PNNBSgfnN2AAqTTUNPWQSrdKUK6dOIzngAKvTzGXcFf1QvclBjI5VivZFOUnpwg5NBi/HCKNRhK8spta6sMe+f1W7T6PLDei7FUZglJRkIcXGNQua4zl0xEueYGN0gKqChVN7R2Ivhi5FP6zxIefS7XDofY+fXchPgoL/gbxmx5+hFrYLT5iGyx2NDPQgqb9LWM7lImTvUd0q9cStD4uieqm3xtL0a08LJc6fWwJrUVlVjj5hQ977L231jhxRdcteB4mC06njGXRdLYIk2nGs6vpgs5iikd5fRVRH4a7T7UBw/f7r00QxMyheEhvnPNebS9z1wKSPAmD5Ly7ZvNz7jrjqwstFf3BUvZ7/qWjgiD4b6l/tpTQqTPCsFs//B0d9WTt42YetKZCI7UHi30Y/5NsoMXjEvQU2qn6m13qiO1/AlqGBzzdBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">9c62ac55c3397210d8d7961d050131fb</block>
+        <comment/>
+        <connected_to>3de92dff-6c72-467b-b170-7715525fb817</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Student Leave Approval Flow">f6626095c3397210d8d7961d05013100</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id>a4cbd5c3-2208-4146-8f93-12c39de26534</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-12 16:33:48</sys_created_on>
+        <sys_id>b6626095c3397210d8d7961d05013145</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-13 02:32:50</sys_updated_on>
+        <ui_id>62a43bc7-66c1-4df4-941d-1203a0ce5702</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">5462ac55c3397210d8d7961d050131e8</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Student Leave Approval Flow">f6626095c3397210d8d7961d05013100</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id>879e2339-acb0-4b6e-a58c-87ea2536a3b3</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-12 16:33:48</sys_created_on>
+        <sys_id>ba626095c3397210d8d7961d05013142</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-13 02:32:50</sys_updated_on>
+        <ui_id>a4cbd5c3-2208-4146-8f93-12c39de26534</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8FYNnQdAjNprcAhsBCqQN0AS5tIGwoiibKEWqfNhRBf97l6JkG62D1miPvYmz3N3Z4Q7UE+Vs66x5UrfG8LUkN59fIsKlx/C7JxIaRm4IVbLilitZDEBEtiCcD6ygM7MvLklyNssRr7hpBXTPb4TphotKs7FPCxqrWabJTf9TiFeYXSdQp9c0pXm2yLMkyd5dpeUiL9OsyoGBLyigZAKvLieCs/sBid5kbrvW48ZqLtfj+X6s8jiBSleeVZpEhL1aJiuGfGoQhkWkAVmBVbo7IJpB9SDFEdhwabEc8ZdfDf+ODbP53F+sGY5IWQgejsUoW4DrFVhAKo5ap8erdKM4ZSaIU7EanLDLUyxceGj9qCHFQimmbCVcIz8GRcihwPRKiDiDJFjrJ/XUxznqx43afZpY3nE5qDIGhaIgDiewqF3prOfTEyZYg4WKBtoWFS1arbZ8SEYuTbwWeIhroXbY1O9dDNQTj1FYiO8QXw3wM2jup/iAZTA50CzBcFoMO4rlUCZG9hExnVkKMOY4JKpbfHOeYhh5HK4I+vgUqnlrb7Hzlo1z7KNfV/5k2/t+iW9tWVWkMXUaVbGxdE3JdKHqosJl3+/Dtp/xwmXJlznlGub1PE3m551ytTjnlDMeudAe2W/s4d/mD92RJMl/e/y1PbgpwlKPsw3N/6E7XrwVQs+D1pQbpPbksffTf8MHOlwuTk+hndJf/VBHbP8Djq8R64EGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=f6626095c3397210d8d7961d05013100"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=f6626095c3397210d8d7961d05013100"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_f6626095c3397210d8d7961d05013100</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-12 16:33:48</sys_created_on>
+        <sys_id>3e626095c3397210d8d7961d05013111</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Student Attendance And Leave Management" source="x_1681222_studen_0">20d43fc1c3b17210d8d7961d050131c2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-12 16:33:48</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_f6626095c3397210d8d7961d05013100</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-12 16:33:48</sys_created_on>
+        <sys_id>7e626095c3397210d8d7961d05013128</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Student Attendance And Leave Management" source="x_1681222_studen_0">20d43fc1c3b17210d8d7961d050131c2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Student Attendance And Leave Management">20d43fc1c3b17210d8d7961d050131c2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-12 16:33:48</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_f6626095c3397210d8d7961d05013100"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_f6626095c3397210d8d7961d05013100"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>f0fe589dc3f57210d8d7961d05013193</sys_id>
+        <latest_snapshot>f6626095c3397210d8d7961d05013100</latest_snapshot>
+        <compiler_build>glide-zurich-07-01-2025__patch4-11-14-2025_12-03-2025_1405.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=f0fe589dc3f57210d8d7961d05013193^sys_idNOT INb6626095c3397210d8d7961d050131b0"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"b6626095c3397210d8d7961d050131b0","name":"plan","plan_signature":null}}</plan>
+        <plan_id>f0fe589dc3f57210d8d7961d05013193</plan_id>
+        <snapshot>e16ce61dc339b210d8d7961d05013130</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-12 16:33:49</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b6626095c3397210d8d7961d050131b0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-13 02:32:51</sys_updated_on>
+        <trigger display_value="">b98be699c339b210d8d7961d05013132</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=f0fe589dc3f57210d8d7961d05013193"/>
+</record_update>

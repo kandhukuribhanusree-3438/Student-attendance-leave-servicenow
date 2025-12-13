@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="9aec3b45c3f17210d8d7961d0501316b" label="Attendance" max_length="40" name="x_1681222_studen_0_attendance" type="collection">
+        <element label="Student" max_length="32" name="student" reference="x_1681222_studen_0_student" type="reference"/>
+        <element label="Month" max_length="255" name="month" type="integer"/>
+        <element label="Subject" max_length="40" name="subject" type="string"/>
+        <element label="Date" max_length="40" name="date" type="glide_date"/>
+        <element label="Marked by" max_length="32" name="marked_by" reference="sys_user" type="reference"/>
+        <element label="Year" max_length="40" name="year" type="string"/>
+        <element choice="3" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Present" sequence="0" value="present"/>
+                <element inactive_on_update="false" label="On Leave" sequence="2" value="on_leave"/>
+                <element inactive_on_update="false" label="Absent" sequence="1" value="absent"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="marked_by"/>
+        </index>
+        <index name="index2">
+            <element name="student"/>
+        </index>
+    </element>
+</database>

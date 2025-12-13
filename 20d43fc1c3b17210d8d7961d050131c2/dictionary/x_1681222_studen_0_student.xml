@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="bcb8f30dc3b17210d8d7961d05013188" label="Student" max_length="40" name="x_1681222_studen_0_student" type="collection">
+        <element label="Faculty Mentor" max_length="32" name="faculty_mentor" reference="sys_user" type="reference"/>
+        <element display="true" label="Student Name" max_length="32" name="user" reference="sys_user" type="reference"/>
+        <element label="Parent User" max_length="32" name="parent_user" reference="sys_user" type="reference"/>
+        <element label="Student ID" max_length="40" name="student_id" type="string"/>
+        <element label="Department" max_length="40" name="department" type="string"/>
+        <element label="Parent Email" max_length="40" name="parent_email" type="string"/>
+        <element label="Year" max_length="40" name="year" type="integer"/>
+        <element label="Section" max_length="40" name="section" type="string"/>
+        <element label="Email" max_length="40" name="email" reference_qual="emailANYTHING" reference_qual_condition="emailANYTHING" type="string"/>
+        <index name="index">
+            <element name="faculty_mentor"/>
+        </index>
+        <index name="index2">
+            <element name="parent_user"/>
+        </index>
+        <index name="index3">
+            <element name="user"/>
+        </index>
+    </element>
+</database>
