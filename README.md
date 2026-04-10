@@ -1,4 +1,5 @@
 Student Attendance & Leave Automation System
+
 Step 1: Creating a Custom Application Using ServiceNow Studio
 Steps Followed (As Implemented)
 1.	Logged in to the ServiceNow PDI (Zurich release).
